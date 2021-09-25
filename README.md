@@ -97,4 +97,4 @@ module.exports = {
 
 - [Come to my server](https://rvlt.gg/zrmFWtJz)
 
-# Will add new features in the future
+# Will add new features in the future# revolthandler.js

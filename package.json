@@ -1,0 +1,24 @@
+{
+  "name": "revolthandler.js",
+  "version": "0.0.5",
+  "description": "A handler for Revolt.js module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node test.js"
+  },
+  "keywords": [
+    "command handler",
+    "command handling",
+    "easy make command",
+    "easy make revolt bot",
+    "revolt",
+    "revolt.js",
+    "revolt command"
+  ],
+  "author": "MrTurk or Jeosty",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "revolt.js": "^5.1.0-alpha.4"
+  }
+}
