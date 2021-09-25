@@ -12,6 +12,8 @@ Easy command handling for revolt.js
   - [Setup](#setup)
   - [Standart](#standart-using-example)
   - [Aliases](#aliases-example)
+  - [Only owner command](#only-owner-command-example)
+  - [Only guild command](#only-guild-command-example)
 
 ## About
 
@@ -88,6 +90,25 @@ module.exports = {
   },
 };
 ```
+
+### Only guild command example
+
+```js
+//"./commands/owner/servericon.js"
+module.exports = {
+  name: "server-icon",
+  aliases: ["server-pfp"],
+  ownerOnly: {
+    status: true,
+    errorMsg: "You don't use this command",
+    deletable: 3000 /*If you want */,
+  },
+  code(message, args, client) {
+    msg.channel.sendMessage("https://autumn.revolt.chat/icons/"+client.servers.get(msg.channel.server_id).icon._id)
+  },
+};
+```
+
 # Keys
 - {user.name}
 - {user.id}
